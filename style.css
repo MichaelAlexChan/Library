@@ -1,0 +1,64 @@
+html, body {
+    width: 100%;
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1vw;
+}
+
+#numberOfItems {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#container {
+    align-self: center;
+    border: 2px solid black;
+    height: 50vh;
+    width: 50vw;
+    display: grid;
+    padding: 10px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows:  repeat(4, 1fr);
+    gap: 10px;
+    overflow: auto;
+}
+form fieldset, button {
+    margin-top: 1vw;
+}
+
+form button { 
+    float: right;
+}
+
+.card {
+    height: auto;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 5%;
+}
+
+.card button, div {
+    flex-basis: auto;
+}
+
+.card button {
+    align-self: center;
+    margin: 0;
+    padding: 0;
+}
+
+.buttonContainer {
+    display: flex;
+    justify-content: space-between;
+    margin: 10% 2% 0 2%;
+}
+

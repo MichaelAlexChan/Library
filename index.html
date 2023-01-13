@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="style.css">
+        <title>Library</title>
+        <script src="script.js" defer></script>
+    </head>
+    <body>
+
+        <h1>Mikey's Library</h1>
+        <div id="numberOfItems">
+            <h2>Number of books in library: </h2>
+            <h3 id="currentItems"></h3>
+        </div>
+
+        <div id="container">
+        </div>
+
+        <form id="newBook">
+            <h2>Add a new book</h2>
+            <label for="bookName">Book Name:</label>
+            <input type="text" id="bookName" name="bookName" required>
+            <label for="bookAuthor">Author:</label>
+            <input type="text" id="bookAuthor" name="author" required>
+            <label for="numberOfPages">Number of Pages:</label>
+            <input type="number" id="numberOfPages" name="numberOfPages" required>
+            
+            <fieldset>
+                <legend>Have you already read this book?</legend>
+                <div>
+                    <label for="readT">Already read</label>
+                    <input type="radio" id="readT" name="read" value="already read" required>
+                    <label for="readF">Haven't read yet</label>
+                    <input type="radio" id="readF" name="read" value="not read yet" required>
+                </div>
+            </fieldset>
+            <button id="submit" type="submit">Submit</button>
+        </form>
+    </body>
+</html>

@@ -115,3 +115,25 @@ form.addEventListener('submit', (e) => {
     myLibrary.push(newBook);
     displayLibrary();
 });
+
+// Validate form - all inputs must be filled
+// Get all input fields from the form
+const inputs = form.querySelectorAll('input');
+form.addEventListener('submit', (e) => {
+    e.preventDefault() // Prevents the default submission behaviour
+
+    let formValid = true;
+
+    // Loop through all inputs and check if each input is filled
+    inputs.forEach((input) => {
+        // If an element is not valid
+        if (!input.reportValidity()) {
+            formValid = false;
+        }
+
+        if (formValid) {
+            console.log('Form Success!');
+            form.reset();
+        }
+    })
+})
